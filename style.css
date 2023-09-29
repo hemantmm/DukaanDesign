@@ -1,0 +1,514 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main
+{
+    display: flex;
+}
+
+.side
+{
+    /* position: relative; */
+    position: sticky;
+    width: 224px;
+    inset: 0;
+    background-color: rgb(30,38,64);
+    height: 100vh;
+    color: rgb(204,204,204);
+}
+
+.sideBar
+{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.sideBar .user {
+    padding: 16px 16px 20px 16px;
+    display: flex;
+    gap: 12px;
+}
+
+.userLogo img
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+}
+
+.userInfo .name
+{
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 4px;
+    font-weight: 500;
+}
+
+.userInfo .store
+{
+    text-decoration: underline;
+    color: grey;
+    font-size: 13px;
+}
+
+.creditsAvailable
+{
+    display: flex;
+    margin-top: auto;
+    margin-bottom: 20px;
+    margin-left: 16px;
+    margin-right: 16px;
+    padding: 6px 16px;
+    gap: 12px;
+    /* background-color: #ffffff0d; */
+    background-color: rgb(53,60,83);
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.creditsAvailableDetails
+{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.bal
+{
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.menuItems 
+{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    /* text-decoration: none; */
+    padding: 8px;
+    list-style: none;
+    flex: 1;
+}
+
+.menuItemsli
+{
+    /* text-decoration: none; */
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    margin-bottom: 4px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.menuItemsli-active, .menuItemsli:hover
+{
+    color: #fff;
+    background-color: rgb(52,59,83);
+}
+
+.sectionPayout
+{
+    background-color: rgb(247,247,247);
+    flex: 1 1 0;
+    overflow: auto;
+}
+
+.header
+{
+    padding: 16px 32px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border-bottom: 1px solid rgb(52,59,83);
+}
+
+.heading
+{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.title
+{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.info
+{
+    display: flex;
+    gap: 6px;
+    font-size: 12px;
+    color: rgb(53,60,83);
+    cursor: pointer;
+}
+
+.actions
+{
+    display: flex;
+    gap: 10px;
+}
+
+
+.headingInfo
+{
+    display: flex;
+    gap: 6px;
+    font-size: 15px;
+    color: grey;
+    cursor: pointer;
+    margin-top: 6px;
+}
+
+.searchBox
+{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 16px;
+    width: 400px;
+    border-radius: 8px;
+    background-color: rgb(247,247,247);
+    /* color: rgb(247,247,247); */
+}
+
+.searchBox input
+{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+}
+
+.actions div
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(223,221,221);
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    cursor: pointer;
+    color: rgb(223,221,221)
+}
+
+.overviewSection
+{
+    padding: 32px;
+}
+
+.overview
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.overviewTitle
+{
+    font-size: 20px;
+    font-weight: 500;
+}
+.filterMonths
+{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 10px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    background-color: white;
+    color: grey;
+}
+
+.overviewCards
+{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    /* grid-area: 25px; */
+    gap: 25px;
+}
+
+.nextPayoutCard
+{
+    display: flex;
+    flex-direction: column;
+    padding: 24px 0 0;
+    background: rgb(20,110,180);
+    color: white;
+    width: 100%;
+    border-radius: 6px;
+    gap: 16px;
+    height: fit-content;
+}
+
+.amountCard
+{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 24px 20px;
+    background-color: white;
+    border-radius: 8px;
+    width: 100%;
+    gap: 12px;
+    height: fit-content;
+}
+
+.nextCardHeader
+{
+    display: flex;
+    gap: 10px;
+    /* font-weight: 900; */
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20px;
+    /* font-size: 40px; */
+}
+
+.nextCardBody
+{
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nextCardNext
+{
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 300;
+    border-radius: 8px;
+    background-color: rgb(14,79,130);
+    font-size: 17px;
+}
+
+.amount
+{
+    font-size: 25px;
+    font-weight: 600;
+    margin-right: 140px;
+}
+
+.info
+{
+    display: flex;
+    gap: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.infoText
+{
+    text-decoration: underline;
+    font-size: 16px;
+    color: #fff;
+}
+
+/* .infoText1 */
+
+.infoText svg
+{
+    margin-top: 2px;
+    rotate: 270deg;
+}
+
+.svg-chevron-down-icon {
+    stroke-width: 3px;
+}
+
+.amountCard .info>div
+{
+    display: flex;
+    gap: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    color: rgb(29,116,183);
+}
+
+.Transactions
+{
+    padding: 0px 32px;
+    /* padding-left: 2px; */
+}
+
+.transactionTitle
+{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.transactionFilter
+{
+    margin-top: 20px;
+    display: flex;
+    gap: 16px;
+}
+
+.transactionTable
+{
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 8px 10px;
+}
+
+.transactionFilter div
+{
+    padding: 6px 14px;
+    border-radius: 200px;
+    font-size: 14px;
+    background-color: rgb(223,221,221);
+    color: rgb(157,126,129);
+}
+
+.tableHeader
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tableContent
+{
+    margin-top: 10px;
+    width: 100%;
+}
+
+.tableSearch
+{
+    padding: 6px 8px 6px 12px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    width: 240px;
+    color: gray;
+}
+
+.tableAction
+{
+    display: flex;
+    gap: 20px;
+}
+
+.tableSearch input
+{
+    padding: 4px 0;
+    font-size: 14px;
+    /* font-family: Inter, sans-serif; */
+    outline: none;
+    border: none;
+    width: 100%;
+}
+
+.tableAction div
+{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 10px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    background-color: white;
+    color: grey;
+}
+
+.tableContent table
+{
+    width: 100%;
+    font-size: 14px;
+    border-collapse: collapse;
+}
+
+.tableContent table thead
+{
+    background-color: rgb(247,247,247);
+    font-weight: 400;
+    text-align: left;
+}
+
+.tableContent table thead tr th
+{
+    padding: 14px 12px;
+    font-weight: 500;
+    color: rgb(77,77,77);
+    font-size: 17px;
+}
+
+.tableContent table thead th:last-child
+{
+    text-align: right;
+}
+
+.tableContent table tbody tr
+{
+    border-bottom: 2px solid rgb(245, 242, 242);
+}
+
+.tableContent table tbody tr td
+{
+    padding: 14px 12px;
+    font-size: 17px;
+}
+
+.td-date
+{
+    color: rgb(20,110,180);
+    font-weight: 500;
+}
+
+.td-trans, .td-total
+{
+    color: rgb(46, 46, 46);
+}
+
+tbody td:last-child
+{
+    text-align: right;
+}
+
+.td-status
+{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.status-process
+{
+    height: 8px;
+    width: 8px;
+    border-radius: 100%;
+    background-color: #999;
+    /* margin-left: 20px; */
+}
+
+.status-success
+{
+    height: 8px;
+    width: 8px;
+    border-radius: 100%;
+    background-color: #17b31b;
+}
