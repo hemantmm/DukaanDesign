@@ -305,21 +305,21 @@
 {
     font-size: 25px;
     font-weight: 600;
-    margin-right: 90px;
+    margin-right: 85px;
 }
 
 .amount2
 {
     font-size: 25px;
     font-weight: 600;
-    margin-right: 84px;
+    margin-right: 82px;
 }
 
 .amount3
 {
     font-size: 25px;
     font-weight: 600;
-    margin-right: 105px;
+    margin-right: 115px;
 }
 
 .info
@@ -525,4 +525,29 @@ tbody td:last-child
     width: 8px;
     border-radius: 100%;
     background-color: #17b31b;
+}
+
+
+@media screen and (min-width:1080px)
+{
+.amount1
+{
+    font-size: 25px;
+    font-weight: 600;
+    margin-right: 40px;
+}
+
+.amount2
+{
+    font-size: 25px;
+    font-weight: 600;
+    margin-right: 23px;
+}
+
+.amount3
+{
+    font-size: 25px;
+    font-weight: 600;
+    margin-right: 65px;
+}
 }
