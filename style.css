@@ -528,26 +528,27 @@ tbody td:last-child
 }
 
 
-@media screen and (min-width:1080px)
+@media only screen and (max-width:1490px) and (min-width:1080px)
 {
 .amount1
 {
     font-size: 25px;
     font-weight: 600;
-    margin-right: 40px;
+    margin-right: 80px;
+    /* background-color: red; */
 }
 
 .amount2
 {
     font-size: 25px;
     font-weight: 600;
-    margin-right: 23px;
+    margin-right: 52px;
 }
 
 .amount3
 {
     font-size: 25px;
     font-weight: 600;
-    margin-right: 65px;
+    margin-right: 90px;
 }
 }
