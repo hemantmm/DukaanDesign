@@ -301,7 +301,21 @@
     font-size: 17px;
 }
 
-.amount
+.amount1
+{
+    font-size: 25px;
+    font-weight: 600;
+    margin-right: 107px;
+}
+
+.amount2
+{
+    font-size: 25px;
+    font-weight: 600;
+    margin-right: 100px;
+}
+
+.amount3
 {
     font-size: 25px;
     font-weight: 600;
