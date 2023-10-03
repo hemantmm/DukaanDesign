@@ -11,7 +11,6 @@
 
 .side
 {
-    /* position: relative; */
     position: sticky;
     width: 224px;
     inset: 0;
@@ -64,7 +63,6 @@
     margin-right: 16px;
     padding: 6px 16px;
     gap: 12px;
-    /* background-color: #ffffff0d; */
     background-color: rgb(53,60,83);
     border-radius: 4px;
     font-size: 14px;
@@ -86,11 +84,6 @@
 
 .menuItems 
 {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
-    /* text-decoration: none; */
     padding: 8px;
     list-style: none;
     flex: 1;
@@ -98,7 +91,6 @@
 
 .menuItemsli
 {
-    /* text-decoration: none; */
     display: flex;
     align-items: center;
     gap: 12px;
@@ -203,93 +195,155 @@
     color: rgb(223,221,221)
 }
 
-.overviewSection
+.overviewSection 
 {
     padding: 32px;
-}
-
-.overview
-{
+  }
+  
+  .overview
+   {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-}
-
-.overviewTitle
-{
+    justify-content: space-between;
+  }
+  
+  .overview .overviewTitle
+   {
     font-size: 20px;
     font-weight: 500;
-}
-.filterMonths
-{
+  }
+  
+  .overview .filterMonths 
+  {
     display: flex;
     align-items: center;
     gap: 6px;
     padding: 6px 10px;
-    border: 1px solid grey;
+    border: 1px solid #ccc;
     border-radius: 4px;
     background-color: white;
-    color: grey;
-}
-
-.overviewCards
-{
-    margin-top: 30px;
+    color: #3f3f46;
+  }
+  
+  .overviewCards
+   {
+    margin-top: 28px;
     display: flex;
     justify-content: space-between;
-    /* grid-area: 25px; */
-    gap: 25px;
-}
-
-.nextPayoutCard
-{
+    gap: 24px;
+  }
+  
+  .amountCard
+   {
+    padding: 24px 20px;
+    background-color: white;
+    border-radius: 8px;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    gap: 16px;
+    height: fit-content;
+    position: relative;
+  }
+  
+  .amountCard .nextCardHeader 
+  {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    color: rgb(77,77,77);
+  }
+  
+  .amountCard .nextCardBody
+   {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .amountCard .nextCardBody .amount 
+  {
+    font-size: 28px;
+    font-weight: 600;
+  }
+  
+  .amountCard .nextCardBody .info 
+  {
+    display: flex;
+    gap: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(20,110,180);
+    cursor: pointer;
+  }
+  
+  .nextCardBody .info .infoText
+   {
+    text-decoration: underline;
+  }
+
+  .infoText, .svg-chevron-down-icon
+  {
+    color: #fff;
+  }
+  
+  .nextCardBody .info svg 
+  {
+    margin-top: 2px;
+    rotate: 270deg;
+  }
+  
+  .nextPayoutCard 
+  {
     padding: 24px 0 0;
     background: rgb(20,110,180);
     color: white;
     width: 100%;
     border-radius: 6px;
-    gap: 16px;
-    height: fit-content;
-}
-
-.amountCard
-{
     display: flex;
     flex-direction: column;
-    position: relative;
-    padding: 24px 20px;
-    background-color: white;
-    border-radius: 8px;
-    width: 100%;
-    gap: 12px;
+    gap: 16px;
     height: fit-content;
-}
-
-.nextCardHeader
-{
+  }
+  
+  .nextPayoutCard .nextCardBody,
+  .nextPayoutCard .nextCardHeader
+   {
+    padding: 0 20px;
+  }
+  
+  .nextPayoutCard .nextCardHeader
+   {
     display: flex;
-    gap: 10px;
-    /* font-weight: 900; */
+    gap: 6px;
+    font-weight: 300;
     align-items: center;
+  }
+  
+  .nextPayoutCard .nextCardBody 
+  {
+    display: flex;
     justify-content: space-between;
-    margin-left: 20px;
-    /* font-size: 40px; */
-}
-
-.nextCardBody
-{
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: space-between; */
-    display: flex;
     align-items: center;
-    justify-content: space-around;
-}
-
-.nextCardNext
-{
+  }
+  
+  .nextPayoutCard .nextCardBody .amount 
+  {
+    font-size: 28px;
+    font-weight: 600;
+  }
+  
+  .nextPayoutCard .nextCardBody .info 
+  {
+    display: flex;
+    gap: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .nextPayoutCard .nextCardNext
+   {
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
@@ -298,72 +352,11 @@
     font-weight: 300;
     border-radius: 8px;
     background-color: rgb(14,79,130);
-    font-size: 17px;
-}
+  }
 
-.amount1
-{
-    font-size: 25px;
-    font-weight: 600;
-    margin-right: 85px;
-}
-
-.amount2
-{
-    font-size: 25px;
-    font-weight: 600;
-    margin-right: 82px;
-}
-
-.amount3
-{
-    font-size: 25px;
-    font-weight: 600;
-    margin-right: 115px;
-}
-
-.info
-{
-    display: flex;
-    gap: 4px;
-    font-size: 14px;
-    font-weight: 500;
-    cursor: pointer;
-}
-
-.infoText
-{
-    text-decoration: underline;
-    font-size: 16px;
-    color: #fff;
-}
-
-/* .infoText1 */
-
-.infoText svg
-{
-    margin-top: 2px;
-    rotate: 270deg;
-}
-
-.svg-chevron-down-icon {
-    stroke-width: 3px;
-}
-
-.amountCard .info>div
-{
-    display: flex;
-    gap: 4px;
-    font-size: 14px;
-    font-weight: 500;
-    cursor: pointer;
-    color: rgb(29,116,183);
-}
-
-.Transactions
+  .Transactions
 {
     padding: 0px 32px;
-    /* padding-left: 2px; */
 }
 
 .transactionTitle
@@ -431,7 +424,6 @@
 {
     padding: 4px 0;
     font-size: 14px;
-    /* font-family: Inter, sans-serif; */
     outline: none;
     border: none;
     width: 100%;
@@ -516,7 +508,6 @@ tbody td:last-child
     width: 8px;
     border-radius: 100%;
     background-color: #999;
-    /* margin-left: 20px; */
 }
 
 .status-success
@@ -525,30 +516,4 @@ tbody td:last-child
     width: 8px;
     border-radius: 100%;
     background-color: #17b31b;
-}
-
-
-@media only screen and (max-width:1490px) and (min-width:1080px)
-{
-.amount1
-{
-    font-size: 25px;
-    font-weight: 600;
-    margin-right: 80px;
-    /* background-color: red; */
-}
-
-.amount2
-{
-    font-size: 25px;
-    font-weight: 600;
-    margin-right: 52px;
-}
-
-.amount3
-{
-    font-size: 25px;
-    font-weight: 600;
-    margin-right: 90px;
-}
 }
