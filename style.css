@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+body
+{
+    font-family: Inter, sans-serif;
+    /* font-family: 'Lucida Sans', 'Lucida Sans; */
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-; */
+    /* font-family: sans-serif; */
+}
+
 .main
 {
     display: flex;
@@ -132,8 +140,8 @@
 
 .title
 {
-    font-size: 22px;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 .info
@@ -171,7 +179,6 @@
     width: 400px;
     border-radius: 8px;
     background-color: rgb(247,247,247);
-    /* color: rgb(247,247,247); */
 }
 
 .searchBox input
@@ -263,7 +270,7 @@
   
   .amountCard .nextCardBody .amount 
   {
-    font-size: 28px;
+    font-size: 30px;
     font-weight: 600;
   }
   
@@ -285,6 +292,7 @@
   .infoText, .svg-chevron-down-icon
   {
     color: #fff;
+    font-size: 17px;
   }
   
   .nextCardBody .info svg 
@@ -361,15 +369,20 @@
 
 .transactionTitle
 {
-    font-size: 20px;
+    font-size: 21px;
     font-weight: 500;
 }
 
 .transactionFilter
 {
-    margin-top: 20px;
     display: flex;
+    margin-top: 20px;
     gap: 16px;
+}
+
+.transactionFilter div
+{
+    font-size: 3px;
 }
 
 .transactionTable
